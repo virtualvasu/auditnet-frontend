@@ -1,0 +1,38 @@
+{
+  "name": "smart-contract-vuln-detector-frontend",
+  "version": "1.0.0",
+  "description": "Frontend for Smart Contract Vulnerability Detector API",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "export": "next export"
+  },
+  "dependencies": {
+    "next": "^14.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "axios": "^1.6.7",
+    "lucide-react": "^0.344.0",
+    "react-syntax-highlighter": "^15.5.0",
+    "@types/react-syntax-highlighter": "^15.5.11",
+    "react-hot-toast": "^2.4.1",
+    "clsx": "^2.1.0",
+    "tailwind-merge": "^2.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.20",
+    "@types/react": "^18.2.57",
+    "@types/react-dom": "^18.2.19",
+    "typescript": "^5.3.3",
+    "tailwindcss": "^3.4.1",
+    "postcss": "^8.4.35",
+    "autoprefixer": "^10.4.17",
+    "eslint": "^8.56.0",
+    "eslint-config-next": "^14.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

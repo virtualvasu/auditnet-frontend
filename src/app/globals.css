@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Dark scrollbar for code blocks */
+.dark-scrollbar::-webkit-scrollbar-track {
+  background: #1e293b;
+}
+
+.dark-scrollbar::-webkit-scrollbar-thumb {
+  background: #475569;
+}
+
+.dark-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+/* Animation classes */
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.slide-up {
+  animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Risk level indicators */
+.risk-high {
+  @apply bg-danger-50 border-danger-200 text-danger-900;
+}
+
+.risk-medium {
+  @apply bg-warning-50 border-warning-200 text-warning-900;
+}
+
+.risk-low {
+  @apply bg-success-50 border-success-200 text-success-900;
+}
+
+/* Code editor improvements */
+.code-editor {
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 14px;
+  line-height: 1.5;
+}
